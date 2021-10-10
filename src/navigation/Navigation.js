@@ -1,16 +1,20 @@
 import React from 'react';
-//import {createBottomNavigator} from '@react-navigation/stack';
-import HomeStack from './HomeStack';
-import AboutStack from './AboutStack';
-import ContactStack from './ConctactStack';
+import RestaStack from './RestaStack';
+import SumaStack from './SumaStack';
+import MultiStack from './MultiStack';
+import DivisionStack from './DivisionStack';
+import FactorialStack from './FactorialStack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { InputAccessoryView } from 'react-native';
 const Tab = createBottomTabNavigator();
 export default function Navigation() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="home" component={HomeStack} options={{title: 'Home'}} />
-      <Tab.Screen name="about" component={AboutStack} options={{title: 'About'}} />
-      <Tab.Screen name="contact" component={ContactStack} options={{title: 'Contact'}}/>
+      <Tab.Screen name="Suma" component={SumaStack} options={{title: 'Suma'}} />
+      <Tab.Screen name="Resta" component={RestaStack} options={{title: 'Resta'}} />
+      <Tab.Screen name="Multiplicacion" component={MultiStack} options={{title: 'Multiplicacion'}}/>
+      <Tab.Screen name="Division" component={DivisionStack} options={{title: 'Division'}} />
+      <Tab.Screen name="Factorial" component={FactorialStack} options={{title: 'Factorial'}} />
     </Tab.Navigator>
   );
 }

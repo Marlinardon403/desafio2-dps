@@ -1,11 +1,11 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import Contact from '../screens/Contact';
+import Resta from '../screens/Resta';
 const Stack = createStackNavigator();
-export default function ConctactStack() {
+export default function RestaStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="contact" component={Contact} options={{title: 'Conctact'}} />
+      <Stack.Screen name="resta" component={Resta} options={{title: 'Resta de dos numeros'}} />
     </Stack.Navigator>
   );
 }

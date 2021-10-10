@@ -1,11 +1,11 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import About from '../screens/About';
+import Suma from '../screens/Suma';
 const Stack = createStackNavigator();
-export default function AboutStack() {
+export default function SumaStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="about" component={About} options={{title: 'About'}} />
+      <Stack.Screen name="suma" component={Suma} options={{title: 'Suma de dos numeros'}} />
     </Stack.Navigator>
   );
 }
